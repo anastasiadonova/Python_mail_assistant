@@ -9,7 +9,7 @@ def send_email(message):                                             #созда
 
     try:                                                             #обработка исключений
         server.login(sender, password)                               #логин и пароль отправителя
-        server.sendmail(sender, sender, message)                     #отправитель, получатель, сообщение
+        server.sendmail(sender, sender, f"Subject: Important message!\n{message}") #отправитель, получатель, заголовок (тема) и само сообщение
         return "Сообщение отправлено"                                #возврат сообщения в случае успешной отправки
     except Exception as _ex:                                         #обработка ошибок и возврат сообщения об ошибке
         return f"{_ex}\nНеверный логин или пароль."
