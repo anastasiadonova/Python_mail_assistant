@@ -20,7 +20,7 @@ password="12345678"
  ```typescript  
  addressee="login@mail.ru"
  ```  
-Используйте необходимый доменное имя smpt-сервера, например если используете Gmail:  
+Используйте необходимый доменное имя smpt-сервера, например, если используете Gmail:  
  ```typescript 
  server = smtplib.SMTP("smtp.gmail.com", 587)  
  ```  
@@ -40,7 +40,7 @@ file = MIMEApplication(open('image.jpg', 'rb').read())
   
 ## To do  
 - [x] Написать программу, оформить код, проверить на работоспособность  
-- [x] Загрузить проект на github.com(https://github.com/anastasiadonova)  
+- [x] Загрузить проект на [github.com](https://github.com/anastasiadonova)  
 - [x] Оформить файл README.md  
   
 ## Создатель 
