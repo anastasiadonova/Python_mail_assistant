@@ -3,10 +3,11 @@ from email.mime.text import MIMEText                                 #подкл
 from email.mime.multipart import MIMEMultipart                       
 from email.mime.application import MIMEApplication
 
+
 def send_email(message):                                             #создаем инструкию отправки сообщения  
-    sender="pythonmailassistant@mail.ru"                             #отправитель и пароль от почты отправителя
-    password="bJDZxDu4LJ1E1gLACBTC"
-    addressee="pythonmailassistant@mail.ru"                          #получатель
+    sender="python@mail.ru"                                          #отправитель и пароль от почты отправителя
+    password="12345"
+    addressee="python@mail.ru"                                       #получатель
 
     server = smtplib.SMTP("smtp.mail.ru", 587)                       #доменное имя smpt-сервера и его порт
     server.starttls()                                                #подключение к шифрованию TLS
