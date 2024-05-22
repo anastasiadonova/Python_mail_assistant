@@ -16,9 +16,33 @@
 sender="your_login@mail.ru"                            
 password="12345678"  
 ```  
-Заполните поле отправителя:  
+Заполните поле получателя:  
  ```typescript  
  addressee="login@mail.ru"
  ```  
- 
-
+Используйте необходимый доменное имя smpt-сервера, например если используете Gmail:  
+ ```typescript 
+ server = smtplib.SMTP("smtp.gmail.com", 587)  
+ ```  
+Не забудьте разрешить сторонним приложениям использование вашей почты!  
+  
+Впишите необходимый заголовок:
+ ```typescript  
+msg["Subject"] = "Открой меня!"  
+ ```  
+Укажите имя файла и его расширение, который необходимо вложить в письмо:  
+ ```typescript  
+file = MIMEApplication(open('image.jpg', 'rb').read())   
+        file.add_header('Content-Disposition', 'attachment', filename='image.jpg')
+ ```  
+  
+Вот и все. Можете запускать программу и вводить сообщение!  
+  
+## To do  
+- [x] Написать программу, оформить код, проверить на работоспособность  
+- [x] Загрузить проект на github.com(https://github.com/anastasiadonova)  
+- [x] Оформить файл README.md  
+  
+## Создатель 
+   
+- [Анастасия](https://el.istu.edu/user/profile.php?id=70515) - Студент ИРНИТУ, группа АСУбз-23-1. 
