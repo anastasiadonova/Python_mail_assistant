@@ -1,6 +1,4 @@
 import smtplib                                                       #импорт сетевого протокола SMTP
-import os
-import mimetypes
 from email.mime.text import MIMEText                                 #подключение модуля email.mime и его подсклассов
 from email.mime.multipart import MIMEMultipart                       
 from email.mime.application import MIMEApplication
